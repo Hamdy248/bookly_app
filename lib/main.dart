@@ -1,5 +1,6 @@
-// ignore_for_file: camel_case_types
+// ignore_for_file: camel_case_types, use_full_hex_values_for_flutter_colors
 
+import 'package:bookly_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
@@ -15,7 +16,10 @@ class BooklyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      darkTheme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData().copyWith(
+        scaffoldBackgroundColor: kPrimaryColor,
+      ),
       home: const SplashView(),
     );
   }
