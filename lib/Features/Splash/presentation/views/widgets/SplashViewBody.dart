@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, unused_import
+// ignore_for_file: file_names, unused_import, non_constant_identifier_names, unnecessary_overrides
 
 import 'package:bookly_app/Features/Splash/presentation/views/widgets/SlidingText.dart';
 import 'package:bookly_app/core/utils/function/asset.dart';
@@ -19,18 +19,13 @@ class _SplashViewBodyState extends State<SplashViewBody>
   late Animation<Offset> slidingAnimation;
   @override
   void initState() {
-    animationController = AnimationController(
-      vsync: this,
-      duration: const Duration(minutes: 1),
-    );
-
     super.initState();
     animationController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 1),
     );
     slidingAnimation =
-        Tween<Offset>(begin: const Offset(0, 12), end: Offset.zero)
+        Tween<Offset>(begin: const Offset(0, 5), end: Offset.zero)
             .animate(animationController);
     animationController.forward();
   }
@@ -55,4 +50,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
       ],
     );
   }
+
+// Function animation
 }
