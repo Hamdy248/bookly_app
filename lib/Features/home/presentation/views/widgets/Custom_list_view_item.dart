@@ -12,11 +12,12 @@ class CustomListViewItem extends StatelessWidget {
       aspectRatio: 2.5 / 4,
       child: Container(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            image: const DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage(AssetData.testImage),
-            )),
+          borderRadius: BorderRadius.circular(16),
+          image: const DecorationImage(
+            fit: BoxFit.fill,
+            image: AssetImage(AssetData.testImage),
+          ),
+        ),
       ),
     );
   }

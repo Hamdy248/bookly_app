@@ -9,9 +9,9 @@ class BestSellerViewItem extends StatelessWidget {
     return Row(
       children: [
         SizedBox(
-          height: 120,
+          height: 130,
           child: AspectRatio(
-            aspectRatio: 2.5 / 4,
+            aspectRatio: 2.8 / 4,
             child: Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
