@@ -1,5 +1,6 @@
+import 'package:bookly_app/core/utils/asset.dart';
 import 'package:bookly_app/core/utils/custom_style.dart';
-import 'package:bookly_app/core/utils/function/asset.dart';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 

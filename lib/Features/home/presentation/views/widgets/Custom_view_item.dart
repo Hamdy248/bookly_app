@@ -1,7 +1,9 @@
 // ignore_for_file: file_names
 
-import 'package:bookly_app/core/utils/function/asset.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../../../../core/utils/asset.dart';
 
 class CustomListViewItem extends StatelessWidget {
   const CustomListViewItem({super.key});
