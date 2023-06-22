@@ -33,19 +33,18 @@ class BookDetalisViewBody extends StatelessWidget {
           const SizedBox(
             height: 6,
           ),
-          const Opacity(
+          Opacity(
             opacity: 0.7,
             child: Text(
               'Rudyard Kipling',
-              style: style.TextStyle18,
+              style: style.TextStyle18.copyWith(fontStyle: FontStyle.italic),
             ),
           ),
           const SizedBox(
             height: 14,
           ),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 120),
-            child: BookRating(),
+          const BookRating(
+            mainAxisAlignment: MainAxisAlignment.center,
           ),
         ],
       ),
