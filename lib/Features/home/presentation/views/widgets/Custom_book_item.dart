@@ -1,12 +1,11 @@
 // ignore_for_file: file_names
 
-
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/asset.dart';
 
-class CustomListViewItem extends StatelessWidget {
-  const CustomListViewItem({super.key});
+class CustomBookItem extends StatelessWidget {
+  const CustomBookItem({super.key});
 
   @override
   Widget build(BuildContext context) {
