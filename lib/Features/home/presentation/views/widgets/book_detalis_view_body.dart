@@ -1,10 +1,12 @@
-// ignore_for_file: camel_case_types, unused_import, unused_local_variable
+// ignore_for_file: camel_case_types, unused_import, unused_local_variable, prefer_const_constructors
 
 import 'package:bookly_app/Features/home/presentation/views/widgets/Custom_book_item.dart';
 import 'package:bookly_app/Features/home/presentation/views/widgets/best_seller_item.dart';
 import 'package:bookly_app/Features/home/presentation/views/widgets/widgets/FeaturedlistViewItem.dart';
 import 'package:bookly_app/core/utils/asset.dart';
 import 'package:bookly_app/core/utils/custom_style.dart';
+import 'package:bookly_app/core/widgets/books_action.dart';
+import 'package:bookly_app/core/widgets/custom_botton.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/customBookDetalisViewAppbar.dart';
@@ -46,6 +48,10 @@ class BookDetalisViewBody extends StatelessWidget {
           const BookRating(
             mainAxisAlignment: MainAxisAlignment.center,
           ),
+          const SizedBox(
+            height: 37,
+          ),
+         const BooksAction()
         ],
       ),
     );
